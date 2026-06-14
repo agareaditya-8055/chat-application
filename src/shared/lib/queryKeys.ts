@@ -1,0 +1,1 @@
+export const queryKeys={currentUser:['current-user'] as const,users:(search='')=>['users',search] as const,chats:['chats'] as const,chat:(id:string)=>['chat',id] as const,messages:(chatId:string)=>['messages',chatId] as const,profile:['profile'] as const};

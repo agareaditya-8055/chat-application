@@ -1,0 +1,1 @@
+import { useQuery } from '@tanstack/react-query'; import { queryKeys } from '@/shared/lib/queryKeys'; import { authApi } from '../api/authApi'; export const useCurrentUser=()=>useQuery({queryKey:queryKeys.currentUser,queryFn:authApi.currentUser,retry:false,staleTime:5*60_000});

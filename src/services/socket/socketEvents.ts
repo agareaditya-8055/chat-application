@@ -1,0 +1,1 @@
+export const SOCKET_EVENTS={connected:'CONNECTED_EVENT',joinChat:'JOIN_CHAT_EVENT',messageReceived:'MESSAGE_RECEIVED_EVENT',messageDeleted:'MESSAGE_DELETE_EVENT',newChat:'NEW_CHAT_EVENT',leaveChat:'LEAVE_CHAT_EVENT',groupRenamed:'UPDATE_GROUP_NAME_EVENT',typing:'TYPING_EVENT',stopTyping:'STOP_TYPING_EVENT'} as const;

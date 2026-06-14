@@ -1,1 +1,0 @@
-import type { ApiEnvelope } from '@/shared/types/domain'; export const unwrap=<T>(payload:ApiEnvelope<T>|T):T=>typeof payload==='object'&&payload!==null&&'data' in payload?(payload as ApiEnvelope<T>).data:payload;

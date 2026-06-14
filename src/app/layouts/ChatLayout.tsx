@@ -1,1 +1,0 @@
-import { Outlet } from 'react-router-dom'; import { ChatSidebar } from '@/features/chats/components/ChatSidebar'; export function ChatLayout(){return <main className="flex h-dvh overflow-hidden bg-background"><ChatSidebar/><Outlet/></main>}

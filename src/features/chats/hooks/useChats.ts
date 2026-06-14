@@ -1,0 +1,1 @@
+import { useQuery } from '@tanstack/react-query'; import { queryKeys } from '@/shared/lib/queryKeys'; import { chatsApi } from '../api/chatsApi'; export const useChats=()=>useQuery({queryKey:queryKeys.chats,queryFn:chatsApi.list,staleTime:30_000}); export const useChat=(id:string)=>useQuery({queryKey:queryKeys.chat(id),queryFn:()=>chatsApi.get(id),enabled:Boolean(id)});

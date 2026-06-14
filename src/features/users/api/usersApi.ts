@@ -1,0 +1,1 @@
+import { apiClient } from '@/services/api/client'; import { unwrap } from '@/services/api/unwrap'; import type { User } from '@/shared/types/domain'; export const usersApi={async search(search:string){return unwrap((await apiClient.get('/users',{params:{search}})).data) as User[]}};
